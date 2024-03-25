@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: rgb(221, 221, 221); 
+}
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+.image-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual ancho */
+    grid-gap: 10px; /* Espacio entre las imágenes */
+}
+
+.grid-container img {
+    width: 100%; /* Para que las imágenes ocupen todo el ancho de la columna */
+    height: auto; /* Para mantener la proporción de la imagen */
+}
